@@ -38,11 +38,11 @@ public class OrderServiceImplTests {
     public void testPlaceOrder() {
 
         OrderItemForm oi1 = new OrderItemForm();
-        oi1.setProduct(newProduct("Pizza","Pizza Description", Money.valueOf(Currency.MKD,1500)));
+        oi1.setProduct(newProduct("Orchid","A diverse and widespread group of flowering plants with blooms that are often colourful and fragrant.", Money.valueOf(Currency.MKD,1500)));
         oi1.setQuantity(1);
 
         OrderItemForm oi2 = new OrderItemForm();
-        oi2.setProduct(newProduct("Hot Dog","Hot Dog Description", Money.valueOf(Currency.MKD,500)));
+        oi2.setProduct(newProduct("Chrysanthemum","Perennial herbaceous flowering plants, sometimes subshrubs. The leaves are alternate, divided into leaflets and may be pinnatisect, lobed, or serrate", Money.valueOf(Currency.MKD,500)));
         oi2.setQuantity(2);
 
         OrderForm orderForm = new OrderForm();

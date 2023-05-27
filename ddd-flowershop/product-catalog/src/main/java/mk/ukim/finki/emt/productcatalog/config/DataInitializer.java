@@ -18,8 +18,8 @@ public class DataInitializer {
 
     @PostConstruct
     public void initData() {
-        Product p1 = Product.build("Pizza","Pizza Description", Money.valueOf(Currency.MKD,500), 10);
-        Product p2 = Product.build("Ice Cream","Ice Cream Description", Money.valueOf(Currency.MKD,100), 5);
+        Product p1 = Product.build("Orchid","A diverse and widespread group of flowering plants with blooms that are often colourful and fragrant.", Money.valueOf(Currency.MKD,500), 10);
+        Product p2 = Product.build("Chrysanthemum","Perennial herbaceous flowering plants, sometimes subshrubs. The leaves are alternate, divided into leaflets and may be pinnatisect, lobed, or serrate", Money.valueOf(Currency.MKD,100), 5);
         if (productRepository.findAll().isEmpty()) {
             productRepository.saveAll(Arrays.asList(p1,p2));
         }
